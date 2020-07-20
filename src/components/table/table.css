@@ -1,0 +1,77 @@
+table{
+    padding: 0;
+    margin: 0;
+    border: 1px;
+    color: #fff5ee;
+}
+th{
+    color: #fff;
+}
+
+td{
+    color: #fff5ee;
+}
+
+td.table-lead{
+    color: rgb(117, 43, 214);
+}
+
+td.table-lead a{
+    color: #00f697;
+    text-decoration: none;
+}
+
+td.table-lead a:hover{
+    color: #00f697;
+	opacity: 1.5;
+	text-align: center;
+	font-size: 150%;
+}
+
+.table-row{
+    padding: 10px;
+}
+
+table thead th{
+    background-color: #3f3f3f;
+    position: sticky;
+    top: -1px;
+    border-bottom: 1px solid #fff;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: rgb(79, 92, 95);
+}
+
+th{
+    text-transform: uppercase;
+}
+
+.confirmed-new, .confirmed-rcvd, .confirmed-death{
+    padding: 10px;
+    font-size: .7rem;
+}
+
+.confirmed-new{
+    color: #fa3636;
+}
+.confirmed-rcvd{
+    color: #07f87f;
+}
+.confirmed-death{
+    color: #ffff00;
+}
+
+@media screen and (max-width : 600px){
+    .table-sm th{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .table{
+        font-size:.8rem;
+    }
+    th{
+        font-size: .65rem;
+        text-transform: none;
+    }
+}
